@@ -163,8 +163,12 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-            
+//        let VerifyCodeController = self.storyboard?.instantiateViewController(withIdentifier: "VerifyCodeController") as! pro
+//        self.navigationController?.pushViewController(VerifyCodeController, animated: true)
+        
     }
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 120
