@@ -62,12 +62,13 @@ class BottomSheetController: UIViewController,UIScrollViewDelegate {
         tap.delegate = self
         scrollView.addGestureRecognizer(tap)
         
-//        view_Gold.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
-//        view_Silver.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
-//        view_Gold.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
-//        view_Gold.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
-//        view_Gold.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
-//        view_Gold.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
+        view_Gold.applyRadiusBorder(radius: 8.0, borderWidth: 0.0, borderColor: .clear)
+        view_Silver.applyRadiusBorder(radius: 8.0, borderWidth: 0.0, borderColor: .clear)
+        view_Basic.applyRadiusBorder(radius: 8.0, borderWidth: 0.0, borderColor: .clear)
+        view_Date.applyRadiusBorder(radius: 8.0, borderWidth: 0.0, borderColor: .clear)
+        view_Time.applyRadiusBorder(radius: 8.0, borderWidth: 0.0, borderColor: .clear)
+        view_SelectVehicle.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
+        btn_Continue.applyRadiusBorder(radius: 5.0, borderWidth: 0.0, borderColor: .clear)
         // Do any additional setup after loading the view.
     }
     
