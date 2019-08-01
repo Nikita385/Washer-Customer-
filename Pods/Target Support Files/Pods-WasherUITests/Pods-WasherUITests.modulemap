@@ -1,0 +1,6 @@
+framework module Pods_WasherUITests {
+  umbrella header "Pods-WasherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
