@@ -82,6 +82,12 @@ class BottomSheetController: UIViewController,UIScrollViewDelegate {
         
         bottomSheetDelegate?.updateBottomSheet(frame: self.initalFrame.offsetBy(dx: 0, dy: self.middleY))
     }
+    @IBAction func tap_Date(_ sender: Any) {
+    }
+    @IBAction func tap_Time(_ sender: Any) {
+    }
+    @IBAction func tap_SelectVehicle(_ sender: Any) {
+    }
 
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

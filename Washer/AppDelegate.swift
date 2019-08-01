@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyArsSWiTL9YuQZKEwbCGiwcKxD_oOzmus8")
         GMSServices.provideAPIKey("AIzaSyArsSWiTL9YuQZKEwbCGiwcKxD_oOzmus8")
 //        self.setLoginController()
+//        setLoginController()
         return true
     }
     func setLoginController() {
