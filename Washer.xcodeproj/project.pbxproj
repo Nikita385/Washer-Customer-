@@ -59,6 +59,9 @@
 		1434066922F17A950040F508 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434066722F17A950040F508 /* AppConstants.swift */; };
 		1434066E22F19B270040F508 /* BBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1434066D22F19B270040F508 /* BBLocationManager.m */; };
 		1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434067022F1A81B0040F508 /* BottomSheetController.swift */; };
+		144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995F822F2F00C00D7C186 /* ProfileController.swift */; };
+		144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995FA22F2F95A00D7C186 /* PackageController.swift */; };
+		144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995FC22F2F9BC00D7C186 /* OrderController.swift */; };
 		264801C06AE7C5D7FC3CF58C /* Pods_WasherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F078D1D6FD26E9FC83BADE /* Pods_WasherUITests.framework */; };
 		461FBD5A8DB939F89AC9BD88 /* Pods_Washer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA5962356D6113894E60DD9 /* Pods_Washer.framework */; };
 		D5062629CF4EBC67B787A485 /* Pods_WasherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D97FBC789B29188005BC932 /* Pods_WasherTests.framework */; };
@@ -143,6 +146,9 @@
 		1434066D22F19B270040F508 /* BBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLocationManager.m; sourceTree = "<group>"; };
 		1434066F22F19BF00040F508 /* Washer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Washer-Bridging-Header.h"; sourceTree = "<group>"; };
 		1434067022F1A81B0040F508 /* BottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
+		144995F822F2F00C00D7C186 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		144995FA22F2F95A00D7C186 /* PackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageController.swift; sourceTree = "<group>"; };
+		144995FC22F2F9BC00D7C186 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
 		33F14B08C43D1FD04B531622 /* Pods-WasherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasherUITests.debug.xcconfig"; path = "Target Support Files/Pods-WasherUITests/Pods-WasherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		459F267674CFA459B15C49D1 /* Pods-WasherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasherTests.debug.xcconfig"; path = "Target Support Files/Pods-WasherTests/Pods-WasherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		65F078D1D6FD26E9FC83BADE /* Pods_WasherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +212,7 @@
 		143405DE22F157E20040F508 /* Washer */ = {
 			isa = PBXGroup;
 			children = (
+				144995F722F2F00C00D7C186 /* SideMenuScreen */,
 				1434065D22F16BDD0040F508 /* Signup */,
 				1434066122F16D290040F508 /* SideMenu */,
 				1434065E22F16BEE0040F508 /* DashBoard */,
@@ -352,6 +359,16 @@
 				1434066D22F19B270040F508 /* BBLocationManager.m */,
 			);
 			path = BBLocationManager;
+			sourceTree = "<group>";
+		};
+		144995F722F2F00C00D7C186 /* SideMenuScreen */ = {
+			isa = PBXGroup;
+			children = (
+				144995F822F2F00C00D7C186 /* ProfileController.swift */,
+				144995FA22F2F95A00D7C186 /* PackageController.swift */,
+				144995FC22F2F9BC00D7C186 /* OrderController.swift */,
+			);
+			path = SideMenuScreen;
 			sourceTree = "<group>";
 		};
 		61C65534C1101AEF44FBD597 /* Pods */ = {
@@ -653,13 +670,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */,
 				143405E222F157E20040F508 /* ViewController.swift in Sources */,
 				1434066022F16D140040F508 /* MenuViewController.swift in Sources */,
+				144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */,
 				1434066322F16E410040F508 /* HomeController.swift in Sources */,
 				1434066922F17A950040F508 /* AppConstants.swift in Sources */,
 				1434066E22F19B270040F508 /* BBLocationManager.m in Sources */,
 				1434065B22F1669C0040F508 /* UIColor+Gradient.swift in Sources */,
 				1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */,
+				144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */,
 				1434066822F17A950040F508 /* Constants.swift in Sources */,
 				1434065C22F1669C0040F508 /* CornerRadius.swift in Sources */,
 				143405E022F157E20040F508 /* AppDelegate.swift in Sources */,

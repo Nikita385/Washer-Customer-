@@ -163,9 +163,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-//        let VerifyCodeController = self.storyboard?.instantiateViewController(withIdentifier: "VerifyCodeController") as! pro
-//        self.navigationController?.pushViewController(VerifyCodeController, animated: true)
-        
+        if indexPath.row == 2
+        {
+           performSegue(withIdentifier: "ShowMyProfile", sender: self)
+        }
     }
     
     
