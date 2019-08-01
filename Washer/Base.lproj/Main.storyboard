@@ -1524,6 +1524,17 @@
                         <viewLayoutGuide key="safeArea" id="kYn-ak-ciX"/>
                     </view>
                     <navigationItem key="navigationItem" id="q4U-G3-ADO"/>
+                    <connections>
+                        <outlet property="lblMobno" destination="JXp-S0-ihD" id="1wX-Mu-oks"/>
+                        <outlet property="lblName" destination="e2V-cm-rgu" id="YWI-b8-bhQ"/>
+                        <outlet property="lblOrder" destination="Fm0-0L-glU" id="TGK-BZ-p45"/>
+                        <outlet property="lblPackage" destination="XgA-Yf-FvY" id="rdf-fC-D69"/>
+                        <outlet property="lblVehical" destination="iYZ-2n-BuN" id="i35-2T-f9U"/>
+                        <outlet property="lblprize" destination="mpd-FX-Hsh" id="I0c-De-SIL"/>
+                        <outlet property="tfemail" destination="ZBY-wN-zp2" id="llM-mD-pp6"/>
+                        <outlet property="tfmobileno" destination="cVz-ft-CFU" id="0bd-s0-pab"/>
+                        <outlet property="tfusername" destination="PH2-mm-NyD" id="9K8-Hu-gSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3J-HB-988" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1698,6 +1709,14 @@
                                                         <constraint firstAttribute="trailing" secondItem="jp4-5D-B98" secondAttribute="trailing" constant="15" id="l8r-VM-Sd4"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="btncomplete" destination="j0N-8v-0p7" id="hMp-xX-Xgj"/>
+                                                    <outlet property="lblPrice" destination="Q3W-Zt-Xjj" id="A27-Tn-yov"/>
+                                                    <outlet property="lblStatus" destination="wo8-hS-jdW" id="ohO-ev-GHt"/>
+                                                    <outlet property="lblTitle" destination="RA0-sW-dcU" id="GqS-0B-lZM"/>
+                                                    <outlet property="lblVehical" destination="Bz7-tK-vjJ" id="nZ5-H8-xEw"/>
+                                                    <outlet property="lbldatetime" destination="r7b-Ni-txH" id="RVK-Jq-Yak"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -1936,6 +1955,17 @@
                                                         <constraint firstAttribute="bottom" secondItem="RIH-fU-QQ7" secondAttribute="bottom" constant="11" id="mwS-Cy-wXc"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="CalanderImage" destination="MLf-DU-kKY" id="8NL-sO-J4r"/>
+                                                    <outlet property="CarImage" destination="TkX-yW-aYC" id="e8T-fk-kg2"/>
+                                                    <outlet property="lblAmount" destination="s8I-DC-Rtj" id="Tth-qy-Z5q"/>
+                                                    <outlet property="lblDatetime" destination="dBq-eq-5mB" id="ucH-y3-Spu"/>
+                                                    <outlet property="lblDays" destination="Tiz-h0-u18" id="udQ-hK-eAe"/>
+                                                    <outlet property="lblPrice" destination="McE-5K-Qcy" id="dYb-BJ-brN"/>
+                                                    <outlet property="lblService" destination="kfY-xN-PhB" id="ylX-Rq-qW7"/>
+                                                    <outlet property="lblType" destination="xZf-Y6-6Wg" id="VnX-XU-KTL"/>
+                                                    <outlet property="lblValidity" destination="ntS-B6-0DG" id="seg-Jb-1sG"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>

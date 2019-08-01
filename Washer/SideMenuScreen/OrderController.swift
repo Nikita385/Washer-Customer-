@@ -48,5 +48,10 @@ class OrderController: UIViewController,UITableViewDataSource, UITableViewDelega
 
 
 class cellSelection: UITableViewCell {
-    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var lbldatetime: UILabel!
+    @IBOutlet weak var lblStatus: UILabel!
+    @IBOutlet weak var lblVehical: UILabel!
+    @IBOutlet weak var btncomplete: UIButton!
 }

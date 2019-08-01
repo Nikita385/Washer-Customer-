@@ -8,7 +8,20 @@
 
 import UIKit
 
-class ProfileController: UIViewController {
+class ProfileController: UIViewController
+{
+    
+    @IBOutlet weak var tfusername: UITextField!
+    @IBOutlet weak var tfmobileno: UITextField!
+    @IBOutlet weak var tfemail: UITextField!
+
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblMobno: UILabel!
+    @IBOutlet weak var lblVehical: UILabel!
+    @IBOutlet weak var lblOrder: UILabel!
+    @IBOutlet weak var lblPackage: UILabel!
+    @IBOutlet weak var lblprize: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

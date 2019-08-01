@@ -50,5 +50,14 @@ class PackageController: UIViewController, UITableViewDataSource, UITableViewDel
 }
 
 class SelectionCell: UITableViewCell {
-    
+    @IBOutlet weak var lblService: UILabel!
+    @IBOutlet weak var lblAmount: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var lblDatetime: UILabel!
+    @IBOutlet weak var lblValidity: UILabel!
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var lblDays: UILabel!
+
+    @IBOutlet weak var CarImage: UIImageView!
+    @IBOutlet weak var CalanderImage: UIImageView!
 }
