@@ -489,6 +489,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="C4q-RI-gta"/>
                                                 </constraints>
+                                                <connections>
+                                                    <segue destination="4Ro-er-xTX" kind="embed" id="JOF-74-Y01"/>
+                                                </connections>
                                             </containerView>
                                         </subviews>
                                         <color key="backgroundColor" name="appColor"/>
@@ -558,17 +561,17 @@
             <objects>
                 <viewController storyboardIdentifier="BottomSheetController" id="4Ro-er-xTX" customClass="BottomSheetController" customModule="Washer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRK-2q-naS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UW2-jF-LjL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9WL-eB-NzO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-LQ-ZM1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-uh-iuc">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
