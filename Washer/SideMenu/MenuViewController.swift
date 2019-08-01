@@ -167,6 +167,14 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         {
            performSegue(withIdentifier: "ShowMyProfile", sender: self)
         }
+        else if indexPath.row == 3
+        {
+            performSegue(withIdentifier: "ShowMyOrder", sender: self)
+        }
+        else if indexPath.row == 5
+        {
+            performSegue(withIdentifier: "ShowMyPackages", sender: self)
+        }
     }
     
     
