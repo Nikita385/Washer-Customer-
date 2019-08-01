@@ -50,7 +50,7 @@ class MenuViewController: UIViewController {
       
         
         arrMenu = ["Home","Profile","My Orders","My Vehicles","Package","Wallet","Help & Support","Privacy & Policy"]
-        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder") as Any,UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
+        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder"),UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
 //        arrMenuImage = ["Invite Facebook Friend"]
 
         
