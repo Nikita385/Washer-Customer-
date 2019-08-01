@@ -50,7 +50,7 @@ class MenuViewController: UIViewController {
       
         
         arrMenu = ["Home","Profile","My Orders","My Vehicles","Package","Wallet","Help & Support","Privacy & Policy"]
-        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile"),UIImage(named: "myOrder"),UIImage(named: "myVehicles"),UIImage(named: "package"),UIImage(named: "wallet"),UIImage(named: "helpSupport"),UIImage(named: "privacyPolicy")]
+        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder") as Any,UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
 //        arrMenuImage = ["Invite Facebook Friend"]
 
         
@@ -174,6 +174,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         else if indexPath.row == 5
         {
             performSegue(withIdentifier: "ShowMyPackages", sender: self)
+        }
+        else if indexPath.row == 7
+        {
+            performSegue(withIdentifier: "ShowSupport", sender: self)
         }
     }
     
