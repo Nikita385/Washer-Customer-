@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1401BBC722F42E5C00B292DB /* SearchPlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBC622F42E5C00B292DB /* SearchPlaceController.swift */; };
+		1401BBCB22F43EE500B292DB /* MyVehicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBC822F43EE500B292DB /* MyVehicalController.swift */; };
+		1401BBCC22F43EE500B292DB /* AddVehicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBC922F43EE500B292DB /* AddVehicalController.swift */; };
+		1401BBCD22F43EE500B292DB /* SupportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBCA22F43EE500B292DB /* SupportController.swift */; };
+		1401BBD022F43F0900B292DB /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBCF22F43F0900B292DB /* Singleton.swift */; };
 		143405E022F157E20040F508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143405DF22F157E20040F508 /* AppDelegate.swift */; };
 		143405E222F157E20040F508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143405E122F157E20040F508 /* ViewController.swift */; };
 		143405E522F157E20040F508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143405E322F157E20040F508 /* Main.storyboard */; };
@@ -86,6 +91,11 @@
 
 /* Begin PBXFileReference section */
 		0FA5962356D6113894E60DD9 /* Pods_Washer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Washer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1401BBC622F42E5C00B292DB /* SearchPlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceController.swift; sourceTree = "<group>"; };
+		1401BBC822F43EE500B292DB /* MyVehicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVehicalController.swift; sourceTree = "<group>"; };
+		1401BBC922F43EE500B292DB /* AddVehicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVehicalController.swift; sourceTree = "<group>"; };
+		1401BBCA22F43EE500B292DB /* SupportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportController.swift; sourceTree = "<group>"; };
+		1401BBCF22F43F0900B292DB /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		143405DC22F157E20040F508 /* Washer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Washer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		143405DF22F157E20040F508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		143405E122F157E20040F508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +197,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1401BBCE22F43F0900B292DB /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				1401BBCF22F43F0900B292DB /* Singleton.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		143405D322F157E10040F508 = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +332,7 @@
 			children = (
 				1434066222F16E410040F508 /* HomeController.swift */,
 				1434067022F1A81B0040F508 /* BottomSheetController.swift */,
+				1401BBC622F42E5C00B292DB /* SearchPlaceController.swift */,
 			);
 			path = DashBoard;
 			sourceTree = "<group>";
@@ -330,6 +349,7 @@
 		1434066422F17A950040F508 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				1401BBCE22F43F0900B292DB /* Singleton */,
 				1434066522F17A950040F508 /* Constants */,
 			);
 			path = HelperClasses;
@@ -364,6 +384,9 @@
 		144995F722F2F00C00D7C186 /* SideMenuScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1401BBC922F43EE500B292DB /* AddVehicalController.swift */,
+				1401BBC822F43EE500B292DB /* MyVehicalController.swift */,
+				1401BBCA22F43EE500B292DB /* SupportController.swift */,
 				144995F822F2F00C00D7C186 /* ProfileController.swift */,
 				144995FA22F2F95A00D7C186 /* PackageController.swift */,
 				144995FC22F2F9BC00D7C186 /* OrderController.swift */,
@@ -671,17 +694,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */,
+				1401BBD022F43F0900B292DB /* Singleton.swift in Sources */,
 				143405E222F157E20040F508 /* ViewController.swift in Sources */,
 				1434066022F16D140040F508 /* MenuViewController.swift in Sources */,
 				144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */,
 				1434066322F16E410040F508 /* HomeController.swift in Sources */,
+				1401BBC722F42E5C00B292DB /* SearchPlaceController.swift in Sources */,
 				1434066922F17A950040F508 /* AppConstants.swift in Sources */,
+				1401BBCB22F43EE500B292DB /* MyVehicalController.swift in Sources */,
 				1434066E22F19B270040F508 /* BBLocationManager.m in Sources */,
 				1434065B22F1669C0040F508 /* UIColor+Gradient.swift in Sources */,
 				1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */,
+				1401BBCD22F43EE500B292DB /* SupportController.swift in Sources */,
 				144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */,
 				1434066822F17A950040F508 /* Constants.swift in Sources */,
 				1434065C22F1669C0040F508 /* CornerRadius.swift in Sources */,
+				1401BBCC22F43EE500B292DB /* AddVehicalController.swift in Sources */,
 				143405E022F157E20040F508 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

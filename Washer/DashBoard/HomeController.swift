@@ -28,10 +28,22 @@ class HomeController: UIViewController,BottomSheetDelegate,GMSMapViewDelegate {
         container.layer.masksToBounds = true
         mapView.isUserInteractionEnabled = true
         btn_gpsIcon.applyRadiusBorder(radius: btn_gpsIcon.frame.size.height/2, borderWidth: 0.0, borderColor: .clear)
+        let tap = UITapGestureRecognizer(target: self, action: Selector(("handleTap:")))
+ 
+        view_locationBack.addGestureRecognizer(tap)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        if  (Singleton.sharedInstance.location != nil) {
+            updateLocationoordinates(coordinates:Singleton.sharedInstance.location!)
+            lblAddress.text = Singleton.sharedInstance.currentAddress
+        }
+    }
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "SearchPlaceController") as! SearchPlaceController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? BottomSheetController{
+         if let vc = segue.destination as? BottomSheetController{
             vc.bottomSheetDelegate = self
             vc.parentView = container
         }
@@ -93,10 +105,10 @@ class HomeController: UIViewController,BottomSheetDelegate,GMSMapViewDelegate {
                                                viewingAngle: 0)
             destinationMarker = marker1
         }else{
-//            CATransaction.begin()
-//            CATransaction.setAnimationDuration(1.0)
             destinationMarker!.position =  coordinates
-//            CATransaction.commit()
+            mapView.camera = GMSCameraPosition(target: coordinates, zoom: 15, bearing: 0,
+                                               viewingAngle: 0)
+
         }
       
        
