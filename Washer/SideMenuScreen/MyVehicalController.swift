@@ -13,7 +13,6 @@ class MyVehicalController: UIViewController, UITableViewDataSource, UITableViewD
 {
     @IBOutlet weak var tableview: UITableView!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self
@@ -48,6 +47,7 @@ class MyVehicalController: UIViewController, UITableViewDataSource, UITableViewD
          let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AddVehicalController") as! AddVehicalController
          self.present(nextViewController, animated:true, completion:nil)
     }
+
 
 
     /*
