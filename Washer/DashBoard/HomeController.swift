@@ -10,18 +10,24 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class HomeController: UIViewController,BottomSheetDelegate {
+class HomeController: UIViewController,BottomSheetDelegate,GMSMapViewDelegate {
   @IBOutlet weak var btn_menu: UIButton!
   @IBOutlet private weak var mapView: GMSMapView!
   @IBOutlet weak var backView: UIView!
   @IBOutlet weak var container: UIView!
+  @IBOutlet weak var lblAddress: UILabel!
+  @IBOutlet weak var btn_gpsIcon: UIButton!
+  @IBOutlet weak var view_locationBack: UIView!
   var coordinates:CLLocationCoordinate2D?
+    var destinationMarker:GMSMarker?
     override func viewDidLoad() {
         super.viewDidLoad()
        self.getCurrentLocation()
+        self.mapView.delegate = self
         container.layer.cornerRadius = 15
         container.layer.masksToBounds = true
-        // Do any additional setup after loading the view.
+        mapView.isUserInteractionEnabled = true
+        btn_gpsIcon.applyRadiusBorder(radius: btn_gpsIcon.frame.size.height/2, borderWidth: 0.0, borderColor: .clear)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,9 +39,19 @@ class HomeController: UIViewController,BottomSheetDelegate {
     
     func updateBottomSheet(frame: CGRect) {
         container.frame = frame
-        //        backView.frame = self.view.frame.offsetBy(dx: 0, dy: 15 + container.frame.minY - self.view.frame.height)
-        //        backView.backgroundColor = UIColor.black.withAlphaComponent(1 - (frame.minY)/200)
+
     }
+ 
+
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        
+            var destinationLocation = CLLocation()
+            destinationLocation = CLLocation(latitude: position.target.latitude,  longitude: position.target.longitude)
+            getCurrentPlace(coordinate:destinationLocation.coordinate)
+            self.coordinates =  destinationLocation.coordinate
+            updateLocationoordinates(coordinates: destinationLocation.coordinate)
+    }
+ 
     // MARK: - Current Location
     func getCurrentLocation(){
         
@@ -51,20 +67,76 @@ class HomeController: UIViewController,BottomSheetDelegate {
                 print(currentCoordinate)
               
                 self.coordinates = currentCoordinate
-                self.configureMap()
+                let mapInsets = UIEdgeInsets(top: 80.0, left: 0.0, bottom: 45.0, right: 0.0)
+                self.mapView.padding = mapInsets
+                
+                manager.distanceFilter = 100
+               
+                // GOOGLE MAPS SDK: COMPASS
+                self.mapView.settings.compassButton = true
+                
+                // GOOGLE MAPS SDK: USER'S LOCATION
+                self.mapView.isMyLocationEnabled = true
+                self.mapView.settings.myLocationButton = true
+                self.updateLocationoordinates(coordinates:currentCoordinate)
             
             }
 
         }
     }
-    private func configureMap() {
-        // Place a marker on the map and center it on the desired coordinates.
-        let marker = GMSMarker(position: self.coordinates!)
-        marker.map = mapView
-        mapView.camera = GMSCameraPosition(target: self.coordinates!, zoom: 15, bearing: 0,
-                                           viewingAngle: 0)
-        mapView.isUserInteractionEnabled = true
+
+    func updateLocationoordinates(coordinates:CLLocationCoordinate2D) {
+        if destinationMarker == nil {
+            let marker1 = GMSMarker(position: coordinates)
+            marker1.map = mapView
+            mapView.camera = GMSCameraPosition(target: coordinates, zoom: 15, bearing: 0,
+                                               viewingAngle: 0)
+            destinationMarker = marker1
+        }else{
+//            CATransaction.begin()
+//            CATransaction.setAnimationDuration(1.0)
+            destinationMarker!.position =  coordinates
+//            CATransaction.commit()
+        }
+      
+       
     }
+    func getCurrentPlace(coordinate: CLLocationCoordinate2D) {
+        
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
+            if error != nil {
+                return
+            }
+            let pm = placemarks! as [CLPlacemark]
+    
+            if pm.count > 0 {
+                let pm = placemarks![0]
+          
+                var addressString : String = ""
+                if pm.subLocality != nil {
+                    addressString = addressString + pm.subLocality! + ", "
+                }
+                if pm.thoroughfare != nil {
+                    addressString = addressString + pm.thoroughfare! + ", "
+                }
+                if pm.locality != nil {
+                    addressString = addressString + pm.locality! + ", "
+                }
+                if pm.country != nil {
+                    addressString = addressString + pm.country! + ", "
+                }
+                if pm.postalCode != nil {
+                    addressString = addressString + pm.postalCode! + " "
+                }
+                self.lblAddress.text = addressString
+            }
+        })
+    }
+    
+  
     @IBAction func tap_SideMenu(_ sender: Any) {
           sideMenuController?.revealMenu()
     }

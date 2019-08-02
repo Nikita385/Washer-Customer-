@@ -53,7 +53,7 @@ class BottomSheetController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
-        pan.delegate = self
+        pan.delegate = self  
         self.panView.addGestureRecognizer(pan)
         
         self.scrollView.panGestureRecognizer.addTarget(self, action: #selector(handlePan(_:)))
