@@ -47,13 +47,10 @@ class MenuViewController: UIViewController {
         
         sideMenuController?.delegate = self
         
-      
-        
         arrMenu = ["Home","Profile","My Orders","My Vehicles","Package","Wallet","Help & Support","Privacy & Policy"]
-        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder"),UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
+        arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder") as Any,UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
 //        arrMenuImage = ["Invite Facebook Friend"]
 
-        
         
         
     }
@@ -136,6 +133,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
        
         return arrMenu.count+1
     }
+    
  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
@@ -170,6 +168,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         else if indexPath.row == 3
         {
             performSegue(withIdentifier: "ShowMyOrder", sender: self)
+        }
+        else if indexPath.row == 4
+        {
+            performSegue(withIdentifier: "ShowVehical", sender: self)
         }
         else if indexPath.row == 5
         {
