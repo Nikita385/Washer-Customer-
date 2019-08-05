@@ -8,12 +8,18 @@
 
 import UIKit
 
-class AddVehicalController: UIViewController
+class AddVehicalController: UIViewController,UITextFieldDelegate
 {
     @IBOutlet weak var btnWhite: UIButton!
     @IBOutlet weak var btnBlack: UIButton!
     @IBOutlet weak var btnBlue: UIButton!
     @IBOutlet weak var btnBrown: UIButton!
+    
+    @IBOutlet weak var txtPin1: UITextField!
+    @IBOutlet weak var txtPin2: UITextField!
+    @IBOutlet weak var txtPin3: UITextField!
+    @IBOutlet weak var txtPin4: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,11 @@ class AddVehicalController: UIViewController
         btnBlue.applyRadiusBorder(radius: self.btnBlue.frame.width/2, borderWidth: 1, borderColor: .black)
         btnBrown.applyRadiusBorder(radius: self.btnBrown.frame.width/2, borderWidth: 1, borderColor: .black)
         btnBlack.applyRadiusBorder(radius: self.btnBlack.frame.width/2, borderWidth: 1, borderColor: .black)
-
+    
+         txtPin1.delegate = self
+         txtPin2.delegate = self
+         txtPin3.delegate = self
+         txtPin4.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -102,15 +112,65 @@ class AddVehicalController: UIViewController
             btnBrown.backgroundColor = UIColor.brown
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
     }
-    */
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if textField == txtPin1 {
+//            let maxLength = 2
+//            let currentString: NSString = textField.text! as NSString
+//            let newString: NSString =
+//                currentString.replacingCharacters(in: range, with: string) as NSString
+//            return newString.length <= maxLength
+//        }
+//        else if textField == txtPin2 {
+//            let maxLength = 2
+//            let currentString: NSString = textField.text! as NSString
+//            let newString: NSString =
+//                currentString.replacingCharacters(in: range, with: string) as NSString
+//            return newString.length <= maxLength
+//        }
+//        else if textField == txtPin3 {
+//            let maxLength = 2
+//            let currentString: NSString = textField.text! as NSString
+//            let newString: NSString =
+//                currentString.replacingCharacters(in: range, with: string) as NSString
+//            return newString.length <= maxLength
+//        }
+//        else if textField == txtPin4 {
+//            let maxLength = 4
+//            let currentString: NSString = textField.text! as NSString
+//            let newString: NSString =
+//                currentString.replacingCharacters(in: range, with: string) as NSString
+//            return newString.length <= maxLength
+//        }
+        
+        let text=textField.text
+        let currentString: NSString = textField.text! as NSString
+        let counter = textField.text?.count
+        
+        if counter! == 1 {
+            
+            if textField == txtPin1{
+                txtPin1.resignFirstResponder()
+                txtPin2.becomeFirstResponder()
+                
+            } else if textField == txtPin2{
+                txtPin2.resignFirstResponder()
+                txtPin3.becomeFirstResponder()
+                
+            } else if textField == txtPin3{
+                txtPin3.resignFirstResponder()
+                txtPin4.becomeFirstResponder()
+                
+            }
+            
+        }else if counter! == 4
+        {
+            txtPin4.resignFirstResponder()
+        }
+        
 
+        return true
+    }
 }
