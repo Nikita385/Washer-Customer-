@@ -1691,7 +1691,7 @@
                                                                     <state key="normal" image="order"/>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo8-hS-jdW">
-                                                                    <rect key="frame" x="253" y="8" width="84" height="25"/>
+                                                                    <rect key="frame" x="262.5" y="8" width="74.5" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="25" id="1WM-Nr-fu9"/>
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="emq-SO-SNV"/>
@@ -2290,7 +2290,8 @@
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <connections>
-                                                    <outlet property="delegate" destination="KLh-AF-hPn" id="nKn-4i-LSo"/>
+                                                    <action selector="textfield_4Tap:" destination="KLh-AF-hPn" eventType="valueChanged" id="4fg-Lh-dAw"/>
+                                                    <outlet property="delegate" destination="KLh-AF-hPn" id="NpR-39-mof"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOk-Ud-Opv">
@@ -2326,48 +2327,48 @@
                                         <rect key="frame" x="57" y="46" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onBtnBlackClicked:" destination="KLh-AF-hPn" eventType="touchUpInside" id="7eE-0Y-2yi"/>
+                                            <action selector="onRadioButtonClick:" destination="KLh-AF-hPn" eventType="touchUpInside" id="yaG-Xd-q7a"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDC-ae-lsr">
                                         <rect key="frame" x="97" y="46" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onBtnWhiteClicked:" destination="KLh-AF-hPn" eventType="touchUpInside" id="t2b-Ow-BHe"/>
+                                            <action selector="onRadioButtonClick:" destination="KLh-AF-hPn" eventType="touchUpInside" id="IA5-uh-Cpn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTZ-cx-ICh">
                                         <rect key="frame" x="138" y="46" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onBtnBlueClicked:" destination="KLh-AF-hPn" eventType="touchUpInside" id="pMa-9o-V4F"/>
+                                            <action selector="onRadioButtonClick:" destination="KLh-AF-hPn" eventType="touchUpInside" id="Xvw-VK-T0b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2g-CM-U9p">
                                         <rect key="frame" x="178" y="46" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.47450980392156861" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.66666666666666663" green="0.47450980392156861" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onBtnBrownClicked:" destination="KLh-AF-hPn" eventType="touchUpInside" id="dsP-QP-h09"/>
+                                            <action selector="onRadioButtonClick:" destination="KLh-AF-hPn" eventType="touchUpInside" id="2h1-3K-zJR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2386,7 +2387,7 @@
                         <outlet property="txtPin1" destination="8ri-j7-axP" id="b0J-ag-T50"/>
                         <outlet property="txtPin2" destination="Yid-RZ-Nsd" id="k47-eJ-CE0"/>
                         <outlet property="txtPin3" destination="Sf9-sL-gJ9" id="w1I-Oj-C5z"/>
-                        <outlet property="txtPin4" destination="H8d-6m-mvb" id="wdl-dv-uek"/>
+                        <outlet property="txtPin4" destination="H8d-6m-mvb" id="bdD-7J-yyu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLb-QZ-5Wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2416,7 +2417,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voJ-9E-gRZ">
                                         <rect key="frame" x="330" y="31" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="40"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
