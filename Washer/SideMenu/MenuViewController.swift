@@ -177,6 +177,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         {
             performSegue(withIdentifier: "ShowMyPackages", sender: self)
         }
+        else if indexPath.row == 6
+        {
+            performSegue(withIdentifier: "ShowWallet", sender: self)
+        }
         else if indexPath.row == 7
         {
             performSegue(withIdentifier: "ShowSupport", sender: self)
