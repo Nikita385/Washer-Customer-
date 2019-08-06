@@ -8,17 +8,22 @@
 
 import UIKit
 import SideMenuSwift
+import Alamofire
+import EZAlertController
+import SwiftyJSON
 
+import Toast_Swift
+import AlamofireImage
 class Preferences {
     static let shared = Preferences()
     var enableTransitionAnimation = false
 }
 
-class MenuViewController: UIViewController {
+class MenuViewController: BaseController {
     var isDarkModeEnabled = false
     var arrMenu : NSMutableArray = []
     var arrMenuImage : NSMutableArray = []
-  
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
@@ -49,22 +54,22 @@ class MenuViewController: UIViewController {
         
         arrMenu = ["Home","Profile","My Orders","My Vehicles","Package","Wallet","Help & Support","Privacy & Policy"]
         arrMenuImage = [UIImage(named: "home")!,UIImage(named: "profile") as Any,UIImage(named: "myOrder") as Any,UIImage(named: "myVehicles") as Any,UIImage(named: "package") as Any,UIImage(named: "wallet") as Any,UIImage(named: "helpSupport") as Any,UIImage(named: "privacyPolicy") as Any]
-//        arrMenuImage = ["Invite Facebook Friend"]
-
+        //        arrMenuImage = ["Invite Facebook Friend"]
+        
         
         
     }
     override func viewWillAppear(_ animated: Bool) {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-//            let contentSize = self.tableView.contentSize
-//            let boundsSize = self.tableView.bounds.size
-//
-//            if contentSize.height < boundsSize.height {
-//
-//                let yOffset = floor(boundsSize.height - contentSize.height) / 2
-//                self.tableView.contentOffset = CGPoint(x: 0, y: -yOffset)
-//            }
-//        })
+        //        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+        //            let contentSize = self.tableView.contentSize
+        //            let boundsSize = self.tableView.bounds.size
+        //
+        //            if contentSize.height < boundsSize.height {
+        //
+        //                let yOffset = floor(boundsSize.height - contentSize.height) / 2
+        //                self.tableView.contentOffset = CGPoint(x: 0, y: -yOffset)
+        //            }
+        //        })
         
     }
     private func configureView() {
@@ -93,6 +98,30 @@ class MenuViewController: UIViewController {
         let showPlaceTableOnLeft = (sidemenuBasicConfiguration.position == .under) != (sidemenuBasicConfiguration.direction == .right)
         //        selectionMenuTrailingConstraint.constant = showPlaceTableOnLeft ? SideMenuController.preferences.basic.menuWidth - size.width : 0
         view.layoutIfNeeded()
+    }
+    
+    @IBAction func tap_Logout(_ sender: Any) {
+        apiLogout()
+    }
+    func apiLogout(){
+        
+        var parameter:Parameters!
+        parameter = ["RegisterId":  Singleton.sharedInstance.userData.RegisterId!]
+        self.showNormalHud(NSLocalizedString("Please Wait...", comment: ""))
+        UserBase.logoutUser(urlPath: BASE_URL+USER_LOGOUT, parameters: parameter, completionHandler: { (response) in
+            if response["Status"]  == "True"{
+                //                self.view.makeToast("Logout Successfully.", duration: 1, position: .center)
+                Constants.APP_DELEGATE.setLoginController()
+            }
+            self.removeNormalHud()
+            
+            
+            
+        }) { (error) in
+            self.removeNormalHud()
+            self.view.makeToast("Server is not responding", duration: 1, position: .center)
+        }
+        
     }
 }
 
@@ -130,11 +159,11 @@ extension MenuViewController: SideMenuControllerDelegate {
 
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+        
         return arrMenu.count+1
     }
     
- 
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuHeaderCell", for: indexPath) as! MenuHeaderCell
@@ -160,10 +189,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         if indexPath.row == 2
         {
-           performSegue(withIdentifier: "ShowMyProfile", sender: self)
+            performSegue(withIdentifier: "ShowMyProfile", sender: self)
         }
         else if indexPath.row == 3
         {
@@ -195,11 +224,11 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             return 50
         }
     }
-        
-    }
     
+}
 
-    
+
+
 
 
 class MenuCell: UITableViewCell {

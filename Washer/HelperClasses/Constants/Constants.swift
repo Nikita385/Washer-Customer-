@@ -68,7 +68,10 @@ struct Constants{
     static let MESSAGE_LOGOUT                          = "Are you sure you want to logout?"
     
     
-    static let BaseURL = "http://35.160.175.165"
+
+    static let BaseURL = "http://api.washkr.com/api/"
+    static let Register = "Register"
+    static let login = "login"
     
     static func NAVIGATION_CONTROLLER_WITH_IDENTIFIER(_ identifier: String) -> UINavigationController{
         

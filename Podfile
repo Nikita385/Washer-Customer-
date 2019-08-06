@@ -9,6 +9,17 @@ target 'Washer' do
   pod 'GooglePlaces', '= 2.7.0'
   pod 'GooglePlacePicker', '= 2.7.0'
   pod 'GoogleMaps', '= 2.7.0'
+  pod 'Firebase/Auth'
+  pod 'PinCodeTextField', :git => "https://github.com/tkach/PinCodeTextField"
+  pod 'Toast-Swift'
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireImage'
+  pod 'AlamofireObjectMapper', '5.2.0 '
+  pod 'SwiftyJSON'
+  pod 'EZAlertController', '3.2'
+  pod 'JGProgressHUD', '1.4'
+  pod 'PopupDialog', '~> 0.5'
+  pod 'RMMapper'
   
   # Pods for Washer
 

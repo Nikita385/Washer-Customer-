@@ -12,6 +12,10 @@ class Singleton {
     var location:CLLocationCoordinate2D?
     var currentAddress : String = ""
     var homeViewController : HomeController!
-    
+    var deviceToken:String = ""
+    var mobileNo:String = ""
+    var deviceName:String = ""
+    var isBlockPopupShown = false
+    var userData:UserDetail!
 
 }

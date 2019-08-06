@@ -1,4 +1,27 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - DynamicBlurView (3.0.1)
+  - EZAlertController (3.2)
+  - Firebase/Auth (6.3.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.1.2)
+  - Firebase/CoreOnly (6.3.0):
+    - FirebaseCore (= 6.0.3)
+  - FirebaseAuth (6.1.2):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.0.3):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -9,31 +32,109 @@ PODS:
     - GooglePlaces (= 2.7.0)
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.2.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.2.1)
+  - GoogleUtilities/Logger (6.2.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.2.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.2.1)"
+  - GoogleUtilities/Reachability (6.2.1):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.2)
   - IQKeyboardManagerSwift (6.4.0)
+  - JGProgressHUD (1.4)
+  - ObjectMapper (3.5.1)
+  - PinCodeTextField (0.2.0)
+  - PopupDialog (0.9.2):
+    - DynamicBlurView (~> 3.0.1)
+  - RMMapper (1.1.5)
   - SideMenuSwift (2.0.1)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage
+  - AlamofireObjectMapper (= 5.2.0)
+  - EZAlertController (= 3.2)
+  - Firebase/Auth
   - GoogleMaps (= 2.7.0)
   - GooglePlacePicker (= 2.7.0)
   - GooglePlaces (= 2.7.0)
   - IQKeyboardManagerSwift
+  - JGProgressHUD (= 1.4)
+  - PinCodeTextField (from `https://github.com/tkach/PinCodeTextField`)
+  - PopupDialog (~> 0.5)
+  - RMMapper
   - SideMenuSwift
+  - SwiftyJSON
+  - Toast-Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - DynamicBlurView
+    - EZAlertController
+    - Firebase
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
     - GoogleMaps
     - GooglePlacePicker
     - GooglePlaces
+    - GoogleUtilities
+    - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - ObjectMapper
+    - PopupDialog
+    - RMMapper
     - SideMenuSwift
+    - SwiftyJSON
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  PinCodeTextField:
+    :git: https://github.com/tkach/PinCodeTextField
+
+CHECKOUT OPTIONS:
+  PinCodeTextField:
+    :commit: 11f01f7e8ee20fbc076117b3bd442b3a5807be8f
+    :git: https://github.com/tkach/PinCodeTextField
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  DynamicBlurView: b1df5415f9bd31897549e5d7077e5ec120a4d636
+  EZAlertController: 633be01320bed47720be54054df47667d61c2481
+  Firebase: 8432d732974498afd5987e9001a05f90f1a3d625
+  FirebaseAuth: 7fa2cc010b93770831a4e7a60651b52c3b8d111a
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 68f8a7f50cdae542715d4e86afa37c4067217dcb
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PinCodeTextField: 6d7d174cf44f13118174682cf5e00aeb19f770a5
+  PopupDialog: f4bb461bf70ff422be0b56656566424ee9273080
+  RMMapper: 21122d753c736d975f6c61e674afce8db73579af
   SideMenuSwift: 588374781f2508f551a41796482290aeff1afd78
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 3fa81b2078e7ba3617486e021fb09d428e604387
+PODFILE CHECKSUM: b080b62cb28aa8643301db35ba9542f4b6e0ffc3
 
 COCOAPODS: 1.7.3

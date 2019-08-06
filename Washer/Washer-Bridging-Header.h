@@ -9,4 +9,6 @@
 #ifndef Washer_Bridging_Header_h
 #define Washer_Bridging_Header_h
 #import "BBLocationManager.h"
+
+#import "TextFieldValidator.h"
 #endif /* Washer_Bridging_Header_h */
