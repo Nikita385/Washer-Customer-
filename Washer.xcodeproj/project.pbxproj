@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,9 +78,15 @@
 		1434066922F17A950040F508 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434066722F17A950040F508 /* AppConstants.swift */; };
 		1434066E22F19B270040F508 /* BBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1434066D22F19B270040F508 /* BBLocationManager.m */; };
 		1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434067022F1A81B0040F508 /* BottomSheetController.swift */; };
+		14486CEB22FAD623004DB8FB /* SelectDatePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14486CEA22FAD623004DB8FB /* SelectDatePopupController.swift */; };
+		14486CED22FAD6DD004DB8FB /* SelectTimePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14486CEC22FAD6DD004DB8FB /* SelectTimePopupController.swift */; };
+		14486CEF22FADA52004DB8FB /* LogoutPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14486CEE22FADA52004DB8FB /* LogoutPopupController.swift */; };
 		144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995F822F2F00C00D7C186 /* ProfileController.swift */; };
 		144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995FA22F2F95A00D7C186 /* PackageController.swift */; };
 		144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144995FC22F2F9BC00D7C186 /* OrderController.swift */; };
+		14B4DF5422FAB6FA0031ADA4 /* MyWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4DF5322FAB6FA0031ADA4 /* MyWalletController.swift */; };
+		14B4DF5822FAB8810031ADA4 /* AddVehicalPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4DF5722FAB8810031ADA4 /* AddVehicalPopupController.swift */; };
+		14B4DF5C22FAB8E20031ADA4 /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4DF5A22FAB8E20031ADA4 /* PopupController.swift */; };
 		264801C06AE7C5D7FC3CF58C /* Pods_WasherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F078D1D6FD26E9FC83BADE /* Pods_WasherUITests.framework */; };
 		461FBD5A8DB939F89AC9BD88 /* Pods_Washer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA5962356D6113894E60DD9 /* Pods_Washer.framework */; };
 		D5062629CF4EBC67B787A485 /* Pods_WasherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D97FBC789B29188005BC932 /* Pods_WasherTests.framework */; };
@@ -185,9 +191,15 @@
 		1434066D22F19B270040F508 /* BBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLocationManager.m; sourceTree = "<group>"; };
 		1434066F22F19BF00040F508 /* Washer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Washer-Bridging-Header.h"; sourceTree = "<group>"; };
 		1434067022F1A81B0040F508 /* BottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
+		14486CEA22FAD623004DB8FB /* SelectDatePopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDatePopupController.swift; sourceTree = "<group>"; };
+		14486CEC22FAD6DD004DB8FB /* SelectTimePopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimePopupController.swift; sourceTree = "<group>"; };
+		14486CEE22FADA52004DB8FB /* LogoutPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPopupController.swift; sourceTree = "<group>"; };
 		144995F822F2F00C00D7C186 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		144995FA22F2F95A00D7C186 /* PackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageController.swift; sourceTree = "<group>"; };
 		144995FC22F2F9BC00D7C186 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		14B4DF5322FAB6FA0031ADA4 /* MyWalletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWalletController.swift; sourceTree = "<group>"; };
+		14B4DF5722FAB8810031ADA4 /* AddVehicalPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicalPopupController.swift; sourceTree = "<group>"; };
+		14B4DF5A22FAB8E20031ADA4 /* PopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
 		33F14B08C43D1FD04B531622 /* Pods-WasherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasherUITests.debug.xcconfig"; path = "Target Support Files/Pods-WasherUITests/Pods-WasherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		459F267674CFA459B15C49D1 /* Pods-WasherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasherTests.debug.xcconfig"; path = "Target Support Files/Pods-WasherTests/Pods-WasherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		65F078D1D6FD26E9FC83BADE /* Pods_WasherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,6 +338,7 @@
 				140B976922FAAB8300A6E2AC /* BaseController */,
 				140B976D22FAAB8300A6E2AC /* Model */,
 				140B976622FAAB8300A6E2AC /* ServiceModel */,
+				14B4DF5622FAB8590031ADA4 /* PopupViewControllerScreen */,
 				144995F722F2F00C00D7C186 /* SideMenuScreen */,
 				1434065D22F16BDD0040F508 /* Signup */,
 				1434066122F16D290040F508 /* SideMenu */,
@@ -465,6 +478,7 @@
 		1434066A22F19B270040F508 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				14B4DF5922FAB8E20031ADA4 /* PopUpViewController */,
 				140B975D22FAAB6300A6E2AC /* RachabilityClass */,
 				140B975F22FAAB6300A6E2AC /* TextFieldValidator */,
 				1434066B22F19B270040F508 /* BBLocationManager */,
@@ -486,12 +500,32 @@
 			children = (
 				1401BBC922F43EE500B292DB /* AddVehicalController.swift */,
 				1401BBC822F43EE500B292DB /* MyVehicalController.swift */,
+				14B4DF5322FAB6FA0031ADA4 /* MyWalletController.swift */,
 				1401BBCA22F43EE500B292DB /* SupportController.swift */,
 				144995F822F2F00C00D7C186 /* ProfileController.swift */,
 				144995FA22F2F95A00D7C186 /* PackageController.swift */,
 				144995FC22F2F9BC00D7C186 /* OrderController.swift */,
 			);
 			path = SideMenuScreen;
+			sourceTree = "<group>";
+		};
+		14B4DF5622FAB8590031ADA4 /* PopupViewControllerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14B4DF5722FAB8810031ADA4 /* AddVehicalPopupController.swift */,
+				14486CEA22FAD623004DB8FB /* SelectDatePopupController.swift */,
+				14486CEC22FAD6DD004DB8FB /* SelectTimePopupController.swift */,
+				14486CEE22FADA52004DB8FB /* LogoutPopupController.swift */,
+			);
+			path = PopupViewControllerScreen;
+			sourceTree = "<group>";
+		};
+		14B4DF5922FAB8E20031ADA4 /* PopUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14B4DF5A22FAB8E20031ADA4 /* PopupController.swift */,
+			);
+			path = PopUpViewController;
 			sourceTree = "<group>";
 		};
 		61C65534C1101AEF44FBD597 /* Pods */ = {
@@ -839,10 +873,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14486CEF22FADA52004DB8FB /* LogoutPopupController.swift in Sources */,
 				140B977722FAAB8400A6E2AC /* BaseNavigationController.swift in Sources */,
+				14B4DF5C22FAB8E20031ADA4 /* PopupController.swift in Sources */,
 				144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */,
 				140B975B22FAAB3200A6E2AC /* OTPController.swift in Sources */,
+				14B4DF5422FAB6FA0031ADA4 /* MyWalletController.swift in Sources */,
 				140B977622FAAB8400A6E2AC /* BaseController.swift in Sources */,
+				14486CEB22FAD623004DB8FB /* SelectDatePopupController.swift in Sources */,
 				140B977A22FAAB8400A6E2AC /* ProfileBase.swift in Sources */,
 				1401BBD022F43F0900B292DB /* Singleton.swift in Sources */,
 				140B975C22FAAB3200A6E2AC /* SignupController.swift in Sources */,
@@ -851,6 +889,7 @@
 				144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */,
 				1434066322F16E410040F508 /* HomeController.swift in Sources */,
 				140B976522FAAB6300A6E2AC /* TextFieldValidator.m in Sources */,
+				14486CED22FAD6DD004DB8FB /* SelectTimePopupController.swift in Sources */,
 				1401BBC722F42E5C00B292DB /* SearchPlaceController.swift in Sources */,
 				1434066922F17A950040F508 /* AppConstants.swift in Sources */,
 				140B977922FAAB8400A6E2AC /* ProfileDetail.swift in Sources */,
@@ -861,6 +900,7 @@
 				140B977C22FAAB8400A6E2AC /* UserBase.swift in Sources */,
 				140B977422FAAB8400A6E2AC /* AFWrapper.swift in Sources */,
 				1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */,
+				14B4DF5822FAB8810031ADA4 /* AddVehicalPopupController.swift in Sources */,
 				140B976322FAAB6300A6E2AC /* Reachability.swift in Sources */,
 				1401BBCD22F43EE500B292DB /* SupportController.swift in Sources */,
 				144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */,

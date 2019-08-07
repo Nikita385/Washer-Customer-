@@ -100,8 +100,12 @@ class MenuViewController: BaseController {
         view.layoutIfNeeded()
     }
     
-    @IBAction func tap_Logout(_ sender: Any) {
-        apiLogout()
+    @IBAction func tap_Logout(_ sender: Any)
+    {
+        PopupController
+            .create(self)
+            .show(LogoutPopupController.instance())
+        //apiLogout()
     }
     func apiLogout(){
         
