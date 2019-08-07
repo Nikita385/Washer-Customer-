@@ -12,8 +12,22 @@
 		1401BBCC22F43EE500B292DB /* AddVehicalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBC922F43EE500B292DB /* AddVehicalController.swift */; };
 		1401BBCD22F43EE500B292DB /* SupportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBCA22F43EE500B292DB /* SupportController.swift */; };
 		1401BBD022F43F0900B292DB /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BBCF22F43F0900B292DB /* Singleton.swift */; };
+		140B975A22FAAB3200A6E2AC /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B975722FAAB3200A6E2AC /* SignInController.swift */; };
+		140B975B22FAAB3200A6E2AC /* OTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B975822FAAB3200A6E2AC /* OTPController.swift */; };
+		140B975C22FAAB3200A6E2AC /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B975922FAAB3200A6E2AC /* SignupController.swift */; };
+		140B976322FAAB6300A6E2AC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B975E22FAAB6300A6E2AC /* Reachability.swift */; };
+		140B976422FAAB6300A6E2AC /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 140B976022FAAB6300A6E2AC /* error@2x.png */; };
+		140B976522FAAB6300A6E2AC /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 140B976222FAAB6300A6E2AC /* TextFieldValidator.m */; };
+		140B977422FAAB8400A6E2AC /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B976722FAAB8300A6E2AC /* AFWrapper.swift */; };
+		140B977522FAAB8400A6E2AC /* ServiceHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B976822FAAB8300A6E2AC /* ServiceHeaders.swift */; };
+		140B977622FAAB8400A6E2AC /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B976A22FAAB8300A6E2AC /* BaseController.swift */; };
+		140B977722FAAB8400A6E2AC /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B976B22FAAB8300A6E2AC /* BaseNavigationController.swift */; };
+		140B977822FAAB8400A6E2AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 140B976C22FAAB8300A6E2AC /* GoogleService-Info.plist */; };
+		140B977922FAAB8400A6E2AC /* ProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B976F22FAAB8300A6E2AC /* ProfileDetail.swift */; };
+		140B977A22FAAB8400A6E2AC /* ProfileBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977022FAAB8300A6E2AC /* ProfileBase.swift */; };
+		140B977B22FAAB8400A6E2AC /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977222FAAB8300A6E2AC /* UserDetail.swift */; };
+		140B977C22FAAB8400A6E2AC /* UserBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977322FAAB8300A6E2AC /* UserBase.swift */; };
 		143405E022F157E20040F508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143405DF22F157E20040F508 /* AppDelegate.swift */; };
-		143405E222F157E20040F508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143405E122F157E20040F508 /* ViewController.swift */; };
 		143405E522F157E20040F508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143405E322F157E20040F508 /* Main.storyboard */; };
 		143405E722F157EA0040F508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143405E622F157EA0040F508 /* Assets.xcassets */; };
 		143405EA22F157EA0040F508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143405E822F157EA0040F508 /* LaunchScreen.storyboard */; };
@@ -96,9 +110,24 @@
 		1401BBC922F43EE500B292DB /* AddVehicalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVehicalController.swift; sourceTree = "<group>"; };
 		1401BBCA22F43EE500B292DB /* SupportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportController.swift; sourceTree = "<group>"; };
 		1401BBCF22F43F0900B292DB /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		140B975722FAAB3200A6E2AC /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		140B975822FAAB3200A6E2AC /* OTPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPController.swift; sourceTree = "<group>"; };
+		140B975922FAAB3200A6E2AC /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		140B975E22FAAB6300A6E2AC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		140B976022FAAB6300A6E2AC /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
+		140B976122FAAB6300A6E2AC /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
+		140B976222FAAB6300A6E2AC /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
+		140B976722FAAB8300A6E2AC /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		140B976822FAAB8300A6E2AC /* ServiceHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHeaders.swift; sourceTree = "<group>"; };
+		140B976A22FAAB8300A6E2AC /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		140B976B22FAAB8300A6E2AC /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		140B976C22FAAB8300A6E2AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		140B976F22FAAB8300A6E2AC /* ProfileDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetail.swift; sourceTree = "<group>"; };
+		140B977022FAAB8300A6E2AC /* ProfileBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBase.swift; sourceTree = "<group>"; };
+		140B977222FAAB8300A6E2AC /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		140B977322FAAB8300A6E2AC /* UserBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBase.swift; sourceTree = "<group>"; };
 		143405DC22F157E20040F508 /* Washer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Washer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		143405DF22F157E20040F508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		143405E122F157E20040F508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		143405E422F157E20040F508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		143405E622F157EA0040F508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		143405E922F157EA0040F508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -205,6 +234,69 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		140B975D22FAAB6300A6E2AC /* RachabilityClass */ = {
+			isa = PBXGroup;
+			children = (
+				140B975E22FAAB6300A6E2AC /* Reachability.swift */,
+			);
+			path = RachabilityClass;
+			sourceTree = "<group>";
+		};
+		140B975F22FAAB6300A6E2AC /* TextFieldValidator */ = {
+			isa = PBXGroup;
+			children = (
+				140B976022FAAB6300A6E2AC /* error@2x.png */,
+				140B976122FAAB6300A6E2AC /* TextFieldValidator.h */,
+				140B976222FAAB6300A6E2AC /* TextFieldValidator.m */,
+			);
+			path = TextFieldValidator;
+			sourceTree = "<group>";
+		};
+		140B976622FAAB8300A6E2AC /* ServiceModel */ = {
+			isa = PBXGroup;
+			children = (
+				140B976722FAAB8300A6E2AC /* AFWrapper.swift */,
+				140B976822FAAB8300A6E2AC /* ServiceHeaders.swift */,
+			);
+			path = ServiceModel;
+			sourceTree = "<group>";
+		};
+		140B976922FAAB8300A6E2AC /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				140B976A22FAAB8300A6E2AC /* BaseController.swift */,
+				140B976B22FAAB8300A6E2AC /* BaseNavigationController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		140B976D22FAAB8300A6E2AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				140B976E22FAAB8300A6E2AC /* ProfileModel */,
+				140B977122FAAB8300A6E2AC /* UserModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		140B976E22FAAB8300A6E2AC /* ProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				140B976F22FAAB8300A6E2AC /* ProfileDetail.swift */,
+				140B977022FAAB8300A6E2AC /* ProfileBase.swift */,
+			);
+			path = ProfileModel;
+			sourceTree = "<group>";
+		};
+		140B977122FAAB8300A6E2AC /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				140B977222FAAB8300A6E2AC /* UserDetail.swift */,
+				140B977322FAAB8300A6E2AC /* UserBase.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
 		143405D322F157E10040F508 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +322,10 @@
 		143405DE22F157E20040F508 /* Washer */ = {
 			isa = PBXGroup;
 			children = (
+				140B976C22FAAB8300A6E2AC /* GoogleService-Info.plist */,
+				140B976922FAAB8300A6E2AC /* BaseController */,
+				140B976D22FAAB8300A6E2AC /* Model */,
+				140B976622FAAB8300A6E2AC /* ServiceModel */,
 				144995F722F2F00C00D7C186 /* SideMenuScreen */,
 				1434065D22F16BDD0040F508 /* Signup */,
 				1434066122F16D290040F508 /* SideMenu */,
@@ -322,7 +418,9 @@
 		1434065D22F16BDD0040F508 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				143405E122F157E20040F508 /* ViewController.swift */,
+				140B975822FAAB3200A6E2AC /* OTPController.swift */,
+				140B975722FAAB3200A6E2AC /* SignInController.swift */,
+				140B975922FAAB3200A6E2AC /* SignupController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -367,6 +465,8 @@
 		1434066A22F19B270040F508 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				140B975D22FAAB6300A6E2AC /* RachabilityClass */,
+				140B975F22FAAB6300A6E2AC /* TextFieldValidator */,
 				1434066B22F19B270040F508 /* BBLocationManager */,
 			);
 			path = ThirdParty;
@@ -428,8 +528,8 @@
 				143405D822F157E20040F508 /* Sources */,
 				143405D922F157E20040F508 /* Frameworks */,
 				143405DA22F157E20040F508 /* Resources */,
-				9C08FDE712C5777703E050E5 /* [CP] Embed Pods Frameworks */,
-				03D67E1F34DFEA2366126FC9 /* [CP] Copy Pods Resources */,
+				F781A265E269A0D881C60EEB /* [CP] Embed Pods Frameworks */,
+				61EBCFDC0013FE59DEC3A095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -548,6 +648,7 @@
 				1434064222F160D50040F508 /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
 				1434065522F160D50040F508 /* MontserratAlternates-ExtraBoldItalic.otf in Resources */,
 				1434063822F160D50040F508 /* MontserratAlternates-LightItalic.otf in Resources */,
+				140B976422FAAB6300A6E2AC /* error@2x.png in Resources */,
 				1434064922F160D50040F508 /* Montserrat-Italic.otf in Resources */,
 				1434064422F160D50040F508 /* Montserrat-LightItalic.otf in Resources */,
 				1434063D22F160D50040F508 /* Montserrat-Thin.otf in Resources */,
@@ -566,6 +667,7 @@
 				1434064A22F160D50040F508 /* MontserratAlternates-SemiBold.otf in Resources */,
 				1434064622F160D50040F508 /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				1434063B22F160D50040F508 /* Montserrat-Light.otf in Resources */,
+				140B977822FAAB8400A6E2AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,38 +688,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03D67E1F34DFEA2366126FC9 /* [CP] Copy Pods Resources */ = {
+		61EBCFDC0013FE59DEC3A095 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C08FDE712C5777703E050E5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D42EB2601E3F81EB4A9919D /* [CP] Check Pods Manifest.lock */ = {
@@ -686,6 +780,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F781A265E269A0D881C60EEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/EZAlertController/EZAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/RMMapper/RMMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenuSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Washer/Pods-Washer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -693,24 +839,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140B977722FAAB8400A6E2AC /* BaseNavigationController.swift in Sources */,
 				144995FD22F2F9BC00D7C186 /* OrderController.swift in Sources */,
+				140B975B22FAAB3200A6E2AC /* OTPController.swift in Sources */,
+				140B977622FAAB8400A6E2AC /* BaseController.swift in Sources */,
+				140B977A22FAAB8400A6E2AC /* ProfileBase.swift in Sources */,
 				1401BBD022F43F0900B292DB /* Singleton.swift in Sources */,
-				143405E222F157E20040F508 /* ViewController.swift in Sources */,
+				140B975C22FAAB3200A6E2AC /* SignupController.swift in Sources */,
 				1434066022F16D140040F508 /* MenuViewController.swift in Sources */,
+				140B975A22FAAB3200A6E2AC /* SignInController.swift in Sources */,
 				144995FB22F2F95A00D7C186 /* PackageController.swift in Sources */,
 				1434066322F16E410040F508 /* HomeController.swift in Sources */,
+				140B976522FAAB6300A6E2AC /* TextFieldValidator.m in Sources */,
 				1401BBC722F42E5C00B292DB /* SearchPlaceController.swift in Sources */,
 				1434066922F17A950040F508 /* AppConstants.swift in Sources */,
+				140B977922FAAB8400A6E2AC /* ProfileDetail.swift in Sources */,
 				1401BBCB22F43EE500B292DB /* MyVehicalController.swift in Sources */,
+				140B977522FAAB8400A6E2AC /* ServiceHeaders.swift in Sources */,
 				1434066E22F19B270040F508 /* BBLocationManager.m in Sources */,
 				1434065B22F1669C0040F508 /* UIColor+Gradient.swift in Sources */,
+				140B977C22FAAB8400A6E2AC /* UserBase.swift in Sources */,
+				140B977422FAAB8400A6E2AC /* AFWrapper.swift in Sources */,
 				1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */,
+				140B976322FAAB6300A6E2AC /* Reachability.swift in Sources */,
 				1401BBCD22F43EE500B292DB /* SupportController.swift in Sources */,
 				144995F922F2F00C00D7C186 /* ProfileController.swift in Sources */,
 				1434066822F17A950040F508 /* Constants.swift in Sources */,
 				1434065C22F1669C0040F508 /* CornerRadius.swift in Sources */,
 				1401BBCC22F43EE500B292DB /* AddVehicalController.swift in Sources */,
 				143405E022F157E20040F508 /* AppDelegate.swift in Sources */,
+				140B977B22FAAB8400A6E2AC /* UserDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
