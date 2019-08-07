@@ -27,6 +27,8 @@
 		140B977A22FAAB8400A6E2AC /* ProfileBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977022FAAB8300A6E2AC /* ProfileBase.swift */; };
 		140B977B22FAAB8400A6E2AC /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977222FAAB8300A6E2AC /* UserDetail.swift */; };
 		140B977C22FAAB8400A6E2AC /* UserBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B977322FAAB8300A6E2AC /* UserBase.swift */; };
+		1419EA2D22FAE99100E55D8C /* PackageBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419EA2B22FAE99100E55D8C /* PackageBase.swift */; };
+		1419EA2E22FAE99100E55D8C /* PackageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419EA2C22FAE99100E55D8C /* PackageDetail.swift */; };
 		143405E022F157E20040F508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143405DF22F157E20040F508 /* AppDelegate.swift */; };
 		143405E522F157E20040F508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143405E322F157E20040F508 /* Main.storyboard */; };
 		143405E722F157EA0040F508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143405E622F157EA0040F508 /* Assets.xcassets */; };
@@ -132,6 +134,8 @@
 		140B977022FAAB8300A6E2AC /* ProfileBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBase.swift; sourceTree = "<group>"; };
 		140B977222FAAB8300A6E2AC /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		140B977322FAAB8300A6E2AC /* UserBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBase.swift; sourceTree = "<group>"; };
+		1419EA2B22FAE99100E55D8C /* PackageBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageBase.swift; sourceTree = "<group>"; };
+		1419EA2C22FAE99100E55D8C /* PackageDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageDetail.swift; sourceTree = "<group>"; };
 		143405DC22F157E20040F508 /* Washer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Washer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		143405DF22F157E20040F508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		143405E422F157E20040F508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 		140B976D22FAAB8300A6E2AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1419EA2A22FAE99100E55D8C /* PackageModel */,
 				140B976E22FAAB8300A6E2AC /* ProfileModel */,
 				140B977122FAAB8300A6E2AC /* UserModel */,
 			);
@@ -307,6 +312,15 @@
 				140B977322FAAB8300A6E2AC /* UserBase.swift */,
 			);
 			path = UserModel;
+			sourceTree = "<group>";
+		};
+		1419EA2A22FAE99100E55D8C /* PackageModel */ = {
+			isa = PBXGroup;
+			children = (
+				1419EA2B22FAE99100E55D8C /* PackageBase.swift */,
+				1419EA2C22FAE99100E55D8C /* PackageDetail.swift */,
+			);
+			path = PackageModel;
 			sourceTree = "<group>";
 		};
 		143405D322F157E10040F508 = {
@@ -890,6 +904,7 @@
 				1434066322F16E410040F508 /* HomeController.swift in Sources */,
 				140B976522FAAB6300A6E2AC /* TextFieldValidator.m in Sources */,
 				14486CED22FAD6DD004DB8FB /* SelectTimePopupController.swift in Sources */,
+				1419EA2E22FAE99100E55D8C /* PackageDetail.swift in Sources */,
 				1401BBC722F42E5C00B292DB /* SearchPlaceController.swift in Sources */,
 				1434066922F17A950040F508 /* AppConstants.swift in Sources */,
 				140B977922FAAB8400A6E2AC /* ProfileDetail.swift in Sources */,
@@ -899,6 +914,7 @@
 				1434065B22F1669C0040F508 /* UIColor+Gradient.swift in Sources */,
 				140B977C22FAAB8400A6E2AC /* UserBase.swift in Sources */,
 				140B977422FAAB8400A6E2AC /* AFWrapper.swift in Sources */,
+				1419EA2D22FAE99100E55D8C /* PackageBase.swift in Sources */,
 				1434067122F1A81B0040F508 /* BottomSheetController.swift in Sources */,
 				14B4DF5822FAB8810031ADA4 /* AddVehicalPopupController.swift in Sources */,
 				140B976322FAAB6300A6E2AC /* Reachability.swift in Sources */,

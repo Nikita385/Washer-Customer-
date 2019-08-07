@@ -28,7 +28,7 @@ var USER_REGISTER =         "Register"
 var USER_LOGIN =            "login"
 var USER_LOGOUT =           "Logout"
 var GET_PROFILE =           "GetProfile"
-
+var GET_MYPACKAGE =         "GetMyPackages"
 
 
 
