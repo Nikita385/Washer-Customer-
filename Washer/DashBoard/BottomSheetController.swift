@@ -86,7 +86,11 @@ class BottomSheetController: UIViewController,UIScrollViewDelegate {
     }
     @IBAction func tap_Time(_ sender: Any) {
     }
-    @IBAction func tap_SelectVehicle(_ sender: Any) {
+    @IBAction func tap_SelectVehicle(_ sender: Any)
+    {
+        PopupController
+            .create(self)
+            .show(AddVehicalPopupController.instance())
     }
 
 

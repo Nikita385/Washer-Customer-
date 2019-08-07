@@ -895,6 +895,9 @@
                                                                     <state key="normal" title="SELECT YOUR VEHICLE HERE">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="tap_SelectVehicle:" destination="4Ro-er-xTX" eventType="touchUpInside" id="NNs-lF-GDh"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" name="primaryColor"/>
@@ -3457,16 +3460,16 @@
             </objects>
             <point key="canvasLocation" x="532" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Vehical Popup Controller-->
         <scene sceneID="7hD-jP-Ttm">
             <objects>
-                <viewController id="k3e-G2-4LJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddVehicalPopupController" id="k3e-G2-4LJ" customClass="AddVehicalPopupController" customModule="Washer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4t8-Jd-vzn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-9Z-h3w">
-                                <rect key="frame" x="16" y="153" width="343" height="360"/>
+                                <rect key="frame" x="16" y="22" width="343" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Vehicles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-yq-Xfz">
@@ -3742,7 +3745,7 @@
         <image name="car filled" width="53" height="21"/>
         <image name="cardhand" width="85" height="85"/>
         <image name="carwhite" width="53" height="21"/>
-        <image name="check box" width="16" height="16"/>
+        <image name="check box" width="21" height="21"/>
         <image name="clock" width="20" height="20"/>
         <image name="delete" width="138" height="177"/>
         <image name="edit" width="16" height="16"/>
