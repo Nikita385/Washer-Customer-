@@ -18,5 +18,8 @@ class Singleton {
     var isBlockPopupShown = false
     var userData:UserDetail!
     var profileData:ProfileDetail!
+    var packageDetail:PackageDetail!
+    var packageList : NSArray?
+    
 
 }
