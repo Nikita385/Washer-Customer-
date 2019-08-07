@@ -14,16 +14,16 @@
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
         </array>
-        <array key="Montserrat-Bold.otf">
+        <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
         </array>
         <array key="Montserrat-Medium.otf">
             <string>Montserrat-Medium</string>
         </array>
-        <array key="Montserrat-Regular.otf">
+        <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
-        <array key="Montserrat-SemiBold.otf">
+        <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
     </customFonts>
@@ -3610,10 +3610,10 @@
             </objects>
             <point key="canvasLocation" x="3526" y="1608"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Date Popup Controller-->
         <scene sceneID="PMM-C7-zC3">
             <objects>
-                <viewController id="zpn-OF-wJ4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectDatePopupController" id="zpn-OF-wJ4" customClass="SelectDatePopupController" customModule="Washer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xz2-q5-YSF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3673,10 +3673,10 @@
             </objects>
             <point key="canvasLocation" x="1850" y="1608"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Time Popup Controller-->
         <scene sceneID="jGt-fg-Jrd">
             <objects>
-                <viewController id="TjQ-n2-oC2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectTimePopupController" id="TjQ-n2-oC2" customClass="SelectTimePopupController" customModule="Washer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3hB-Jo-YM4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3685,14 +3685,14 @@
                                 <rect key="frame" x="16" y="56" width="343" height="331"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V4-14-MMi">
-                                        <rect key="frame" x="123" y="10" width="98" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V4-14-MMi">
+                                        <rect key="frame" x="123" y="10" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <color key="textColor" name="primaryColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-zd-Lvx">
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-zd-Lvx">
                                         <rect key="frame" x="16" y="55" width="312" height="162"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <date key="date" timeIntervalSinceReferenceDate="586791145.62430894">
@@ -3736,6 +3736,83 @@
             </objects>
             <point key="canvasLocation" x="1054" y="1608"/>
         </scene>
+        <!--Logout Popup Controller-->
+        <scene sceneID="XDh-B2-nLw">
+            <objects>
+                <viewController storyboardIdentifier="LogoutPopupController" id="Jee-7y-4ZM" customClass="LogoutPopupController" customModule="Washer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WrS-Tf-IS7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6F-so-3lj">
+                                <rect key="frame" x="19" y="131" width="343" height="209"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tony_Stark3000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-Mn-wWO">
+                                        <rect key="frame" x="42" y="56" width="260" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                                        <color key="textColor" name="Primary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-3u-HeW">
+                                        <rect key="frame" x="90" y="94" width="162" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Primary"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure you want to logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F50-f7-IvD">
+                                        <rect key="frame" x="16" y="116" width="311" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                                        <color key="textColor" name="Primary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="from application?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYF-n5-l3B">
+                                        <rect key="frame" x="58" y="138" width="229" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                                        <color key="textColor" name="Primary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="pOk-Xp-4t2"/>
+                                    <constraint firstAttribute="width" constant="343" id="yiq-Jk-CUu"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="truck" translatesAutoresizingMaskIntoConstraints="NO" id="saw-Db-gpj">
+                                <rect key="frame" x="30" y="12" width="320" height="165"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-39-ARW">
+                                <rect key="frame" x="159" y="302" width="63" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="onbtnLogoutClicked" destination="Jee-7y-4ZM" eventType="touchUpInside" id="pdL-Yx-wNG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="a0i-nY-6bm" firstAttribute="top" secondItem="saw-Db-gpj" secondAttribute="top" constant="8" id="1Cs-aI-7PJ"/>
+                            <constraint firstItem="D4d-39-ARW" firstAttribute="top" secondItem="i6F-so-3lj" secondAttribute="bottom" constant="-38" id="3jo-hP-gph"/>
+                            <constraint firstItem="i6F-so-3lj" firstAttribute="leading" secondItem="a0i-nY-6bm" secondAttribute="leading" constant="19" id="5KD-cr-Xaq"/>
+                            <constraint firstItem="D4d-39-ARW" firstAttribute="leading" secondItem="a0i-nY-6bm" secondAttribute="leading" constant="159" id="5yp-Jt-x02"/>
+                            <constraint firstItem="a0i-nY-6bm" firstAttribute="trailing" secondItem="D4d-39-ARW" secondAttribute="trailing" constant="153" id="Qpc-VY-29c"/>
+                            <constraint firstItem="a0i-nY-6bm" firstAttribute="trailing" secondItem="i6F-so-3lj" secondAttribute="trailing" constant="13" id="XDE-2V-aHH"/>
+                            <constraint firstItem="saw-Db-gpj" firstAttribute="leading" secondItem="a0i-nY-6bm" secondAttribute="leading" constant="30" id="bav-s8-v3P"/>
+                            <constraint firstItem="a0i-nY-6bm" firstAttribute="trailing" secondItem="saw-Db-gpj" secondAttribute="trailing" constant="25" id="jfx-5r-sk7"/>
+                            <constraint firstItem="i6F-so-3lj" firstAttribute="top" secondItem="saw-Db-gpj" secondAttribute="bottom" constant="-46" id="z5B-MN-Lpn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a0i-nY-6bm"/>
+                    </view>
+                    <connections>
+                        <outlet property="LogoutView" destination="i6F-so-3lj" id="tDO-zp-V9x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndr-C0-FY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-637"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BACK BTN" width="16" height="16"/>
@@ -3747,6 +3824,7 @@
         <image name="carwhite" width="53" height="21"/>
         <image name="check box" width="21" height="21"/>
         <image name="clock" width="20" height="20"/>
+        <image name="close" width="63" height="63"/>
         <image name="delete" width="138" height="177"/>
         <image name="edit" width="16" height="16"/>
         <image name="edit_filled" width="312" height="310"/>
@@ -3764,11 +3842,15 @@
         <image name="radioBtn" width="24" height="24"/>
         <image name="sedan" width="54" height="20"/>
         <image name="suv" width="54" height="19"/>
+        <image name="truck" width="289" height="165"/>
         <image name="uncheckedRadioBtn" width="24" height="24"/>
         <image name="upload" width="71" height="71"/>
         <image name="wash_grey" width="24" height="34"/>
         <image name="wash_white" width="24" height="34"/>
         <image name="wheel" width="13" height="13"/>
+        <namedColor name="Primary">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTKit" colorSpace="catalog"/>
+        </namedColor>
         <namedColor name="appColor">
             <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

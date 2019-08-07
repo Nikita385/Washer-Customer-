@@ -82,9 +82,17 @@ class BottomSheetController: UIViewController,UIScrollViewDelegate {
         
         bottomSheetDelegate?.updateBottomSheet(frame: self.initalFrame.offsetBy(dx: 0, dy: self.middleY))
     }
-    @IBAction func tap_Date(_ sender: Any) {
+    @IBAction func tap_Date(_ sender: Any)
+    {
+        PopupController
+            .create(self)
+            .show(SelectDatePopupController.instance())
     }
-    @IBAction func tap_Time(_ sender: Any) {
+    @IBAction func tap_Time(_ sender: Any)
+    {
+        PopupController
+            .create(self)
+            .show(SelectTimePopupController.instance())
     }
     @IBAction func tap_SelectVehicle(_ sender: Any)
     {
