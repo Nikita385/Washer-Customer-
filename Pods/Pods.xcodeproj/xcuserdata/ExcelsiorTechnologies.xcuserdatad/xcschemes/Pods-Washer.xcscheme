@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FDFDC07A93A0CEA6D5DCF66912E91D2"
+               BlueprintIdentifier = "1144998ADD92AEA9950F6BDA5462C631"
                BuildableName = "Pods_Washer.framework"
                BlueprintName = "Pods-Washer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FDFDC07A93A0CEA6D5DCF66912E91D2"
+            BlueprintIdentifier = "1144998ADD92AEA9950F6BDA5462C631"
             BuildableName = "Pods_Washer.framework"
             BlueprintName = "Pods-Washer"
             ReferencedContainer = "container:Pods.xcodeproj">

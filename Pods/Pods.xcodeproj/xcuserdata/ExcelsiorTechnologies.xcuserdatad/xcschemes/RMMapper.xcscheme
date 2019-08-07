@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E39AD4962E65E6621D0D2903A54C7039"
+               BlueprintIdentifier = "DF0EDA3DDDF93F5900F5D64550AAD9BC"
                BuildableName = "RMMapper.framework"
                BlueprintName = "RMMapper"
                ReferencedContainer = "container:Pods.xcodeproj">

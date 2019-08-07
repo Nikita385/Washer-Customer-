@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A229E148BD2945D5E3C62D460220764"
+               BlueprintIdentifier = "8FDCAE246D99A1A234C578D5D10DDA73"
                BuildableName = "EZAlertController.framework"
                BlueprintName = "EZAlertController"
                ReferencedContainer = "container:Pods.xcodeproj">
