@@ -17,5 +17,6 @@ class Singleton {
     var deviceName:String = ""
     var isBlockPopupShown = false
     var userData:UserDetail!
+    var profileData:ProfileDetail!
 
 }
