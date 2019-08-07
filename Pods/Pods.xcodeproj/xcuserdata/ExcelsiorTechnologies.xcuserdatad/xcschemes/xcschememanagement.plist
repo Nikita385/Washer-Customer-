@@ -11,22 +11,12 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Alamofire.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
 		<key>AlamofireImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
-		</dict>
-		<key>AlamofireImage.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 		<key>AlamofireObjectMapper.xcscheme</key>
 		<dict>
@@ -35,22 +25,12 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>AlamofireObjectMapper.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
 		<key>Cosmos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
-		</dict>
-		<key>Cosmos.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>DynamicBlurView.xcscheme</key>
 		<dict>
@@ -59,22 +39,12 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>DynamicBlurView.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
 		<key>EZAlertController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
-		</dict>
-		<key>EZAlertController.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
 		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
@@ -83,22 +53,12 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>Firebase.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
-		</dict>
 		<key>FirebaseAuth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
-		</dict>
-		<key>FirebaseAuth.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
 		</dict>
 		<key>FirebaseAuthInterop.xcscheme</key>
 		<dict>
@@ -107,22 +67,12 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
-		<key>FirebaseAuthInterop.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
-		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
-		</dict>
-		<key>FirebaseCore.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
 		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
@@ -131,31 +81,26 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>GTMSessionFetcher.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
-		</dict>
 		<key>GoogleMaps.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>10</integer>
 		</dict>
 		<key>GooglePlacePicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>11</integer>
 		</dict>
 		<key>GooglePlaces.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>12</integer>
 		</dict>
 		<key>GoogleUtilities.xcscheme</key>
 		<dict>
@@ -164,17 +109,12 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>GoogleUtilities.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
-		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>15</integer>
 		</dict>
 		<key>JGProgressHUD.xcscheme</key>
 		<dict>
@@ -183,22 +123,12 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>JGProgressHUD.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
-		</dict>
-		<key>ObjectMapper.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>22</integer>
 		</dict>
 		<key>PinCodeTextField.xcscheme</key>
 		<dict>
@@ -207,31 +137,26 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
-		<key>PinCodeTextField.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
-		</dict>
 		<key>Pods-Washer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Pods-WasherTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>20</integer>
 		</dict>
 		<key>Pods-WasherUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>21</integer>
 		</dict>
 		<key>PopupDialog.xcscheme</key>
 		<dict>
@@ -240,11 +165,6 @@
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
-		<key>PopupDialog.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
-		</dict>
 		<key>RMMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -252,17 +172,12 @@
 			<key>orderHint</key>
 			<integer>23</integer>
 		</dict>
-		<key>RMMapper.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>25</integer>
-		</dict>
 		<key>SideMenuSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>24</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
@@ -271,22 +186,12 @@
 			<key>orderHint</key>
 			<integer>25</integer>
 		</dict>
-		<key>SwiftyJSON.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>26</integer>
-		</dict>
 		<key>Toast-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>26</integer>
-		</dict>
-		<key>Toast-Swift.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>27</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
