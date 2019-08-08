@@ -105,6 +105,9 @@ class SupportController: UIViewController,UIImagePickerControllerDelegate, UINav
     }
     
     
+    @IBAction func tap_SideMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
 
     /*
     // MARK: - Navigation

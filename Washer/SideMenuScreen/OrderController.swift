@@ -32,7 +32,9 @@ class OrderController: UIViewController,UITableViewDataSource, UITableViewDelega
     
 
     
-    
+    @IBAction func tap_SideMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
 
     /*
     // MARK: - Navigation

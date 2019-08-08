@@ -30,7 +30,9 @@ class MyWalletController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    
+    @IBAction func tap_SideMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
 
     /*
     // MARK: - Navigation

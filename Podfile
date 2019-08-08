@@ -20,6 +20,7 @@ target 'Washer' do
   pod 'JGProgressHUD', '1.4'
   pod 'PopupDialog', '~> 0.5'
   pod 'RMMapper'
+  pod 'CardParts'
   
   # Pods for Washer
 

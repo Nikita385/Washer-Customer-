@@ -225,12 +225,10 @@ class MyVehicalController: UIViewController, UITableViewDataSource, UITableViewD
         return 50
     }
     
-    
-    @IBAction func onBtnMenuClicked(_ sender: Any)
-    {
+    @IBAction func tap_SideMenu(_ sender: Any) {
         sideMenuController?.revealMenu()
     }
-    
+  
     @IBAction func onBtnAddClicked(_ sender: Any)
     {
         

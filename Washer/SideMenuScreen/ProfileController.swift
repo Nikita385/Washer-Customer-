@@ -41,6 +41,9 @@ class ProfileController: BaseController
    
         
     }
+    @IBAction func tap_SideMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
     func apigetProfile(){
         var parameter:Parameters!
         parameter = ["RegisterId":  Singleton.sharedInstance.userData.RegisterId!]

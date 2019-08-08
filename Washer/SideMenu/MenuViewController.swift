@@ -43,13 +43,40 @@ class MenuViewController: BaseController {
         configureView()
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
         }, with: "1")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")
         }, with: "2")
         
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "OrderController")
+        }, with: "3")
+
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "MyVehicalController")
+        }, with: "4")
+
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "PackageListController")
+        }, with: "5")
+
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "MyWalletController")
+        }, with: "6")
+
+
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "SupportController")
+        }, with: "7")
+
+
+
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "SupportController")
+        }, with: "8")
+
         sideMenuController?.delegate = self
         
         arrMenu = ["Home","Profile","My Orders","My Vehicles","Package","Wallet","Help & Support","Privacy & Policy"]
@@ -194,30 +221,15 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 2
-        {
-            performSegue(withIdentifier: "ShowMyProfile", sender: self)
+        let row = indexPath.row
+  
+        sideMenuController?.setContentViewController(with: "\(row)", animated: Preferences.shared.enableTransitionAnimation)
+        sideMenuController?.hideMenu()
+            
+        if let identifier = sideMenuController?.currentCacheIdentifier() {
+                print("[Example] View Controller Cache Identifier: \(identifier)")
         }
-        else if indexPath.row == 3
-        {
-            performSegue(withIdentifier: "ShowMyOrder", sender: self)
-        }
-        else if indexPath.row == 4
-        {
-            performSegue(withIdentifier: "ShowVehical", sender: self)
-        }
-        else if indexPath.row == 5
-        {
-            performSegue(withIdentifier: "ShowMyPackages", sender: self)
-        }
-        else if indexPath.row == 6
-        {
-            performSegue(withIdentifier: "ShowWallet", sender: self)
-        }
-        else if indexPath.row == 7
-        {
-            performSegue(withIdentifier: "ShowSupport", sender: self)
-        }
+
     }
     
     

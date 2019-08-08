@@ -27,7 +27,9 @@ class PackageController: BaseController, UITableViewDataSource, UITableViewDeleg
         
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func tap_SideMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return packageList.count
@@ -38,7 +40,7 @@ class PackageController: BaseController, UITableViewDataSource, UITableViewDeleg
         let packageDetail = PackageDetail.init(object: packageList.object(at: indexPath.row))
 //        let packageDetail = packageList.object(at: indexPath.row) as! PackageDetail
         cell.lblService.text = packageDetail.PackageName
-        cell.lblDays.text = packageDetail.Duration
+        cell.lblDays.text = packageDetail.Duration! + " DAYS"
         cell.lblPrice.text = packageDetail.Amount
         cell.lblType.text = packageDetail.PackageCategory
         cell.lblDate.text = packageDetail.PackageBuyDate

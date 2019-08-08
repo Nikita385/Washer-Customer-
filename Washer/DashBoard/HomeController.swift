@@ -147,8 +147,6 @@ class HomeController: UIViewController,BottomSheetDelegate,GMSMapViewDelegate {
             }
         })
     }
-    
-  
     @IBAction func tap_SideMenu(_ sender: Any) {
           sideMenuController?.revealMenu()
     }
